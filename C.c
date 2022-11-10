@@ -5,7 +5,7 @@
 int includes(int array[], int length, int value)
 {
   int i;
-  
+
   i = 0;
   while (i < length)
   {
@@ -36,7 +36,7 @@ int *array_copy(int *array, int length)
 int *ft_intcat(int *a1, size_t len1, int *a2, size_t len2)
 {
   int *new_array;
-  
+
   new_array = malloc(sizeof(int) * (len1 + len2));
   if (!new_array)
 	return (0);
@@ -69,19 +69,18 @@ int bin_to_dec(char *string)
 int binary_search(int a[], int e, int l, int r)
 {
 
-  // find the mid-way index between index l and index r  
+  // find the mid-way index between index l and index r
   int mid;
-  
+
   mid = l + (r - l) / 2;
-  
+
   // if l is ever > r, it means the element is not in the array
-  if (l > r) 
+  if (l > r)
   	return (-1);
-  
   // if we've found the element at the mid-way index, return the index
-  // else if the element MUST be in the left-portion of the portion of the 
+  // else if the element MUST be in the left-portion of the portion of the
   //         array we are currently looking at, search for it in this portion
-  // else if the element MUST be in the right-portion of the portion of the 
+  // else if the element MUST be in the right-portion of the portion of the
   //         array we are currently looking at, search for it in this portion
   if (a[mid] == e)
     return mid;
