@@ -39,7 +39,11 @@ print(vowles)
 vowles.add("w")
 print(vowles)
 # =============================================================================
+for i in range(10):
+    print("this is " + str(i))
 
+
+# =============================================================================
 # OOP (Object Oriented Programming) is a way of programming that is based on the concept of objects and classes
 # class is a blueprint for creating objects (a particular data structure), providing initial values for state
 # (member variables or attributes), and implementations of behavior (member functions or methods)
